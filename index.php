@@ -51,9 +51,11 @@
                     <form action="">
                         <div class="form-group mb-2">
                             <input type="text" id="name" class="form-control" placeholder="Enter Name...">
+                            <div class="name-error error"></div>
                         </div>
                         <div class="form-group mb-2">
                             <input type="text" id="email" class="form-control" placeholder="Enter Email...">
+                            <div class="email-error error"></div>
                         </div>
                         <div class="form-group mb-2">
                             <input type="password" id="password" class="form-control" placeholder="Choose Password...">
@@ -111,5 +113,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/simple.js?v=1.0"></script>
-<script src="valid.js"></script>
+<script src="assets/js/signup.js"></script>
 </html>
