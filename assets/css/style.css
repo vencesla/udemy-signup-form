@@ -99,15 +99,12 @@ body {
     -ms-transform: rotate(-10deg);
     -o-transform: rotate(-10deg);
     transform: rotate(-10deg);
-    background-color:#7047d7;;
+    background-color:#7047d7;
     z-index: -1;
 }
 
 /* ======== Login Form Design ======== */
 
-.login-cover {
-    display: none;
-}
 
 .fa-pencil-square-o, .fa-lock {
     -webkit-animation: icon-animate 5s infinite;
@@ -136,4 +133,82 @@ body {
 .border-green{
     border-color: green;
     color: green !important;
+}
+.fa-spinner {
+    font-size: 14px;
+    color: #7047d7;
+}
+/* ====== Signup progress =====*/
+.progress {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background-color: #7047d7; /* Couleur de fond de la barre */
+    overflow: hidden; /* Empêche le débordement du contenu */
+}
+
+.progress::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: orange; /* Couleur de la barre de progression */
+    animation: wait 1s infinite; /* Animation de la progression */
+    -webkit-animation: wait 1s infinite;
+    -moz-animation: wait 1s infinite;
+}
+
+@keyframes wait {
+    0% { width: 0%; }
+    10% { width: 10%; }
+    30% { width: 30%; }
+    50% { width: 50%; }
+    100% { width: 100%; }
+}
+
+/* ====== login progress ======= */
+.login-progress {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background-color: #7047d7; /* Couleur de fond de la barre */
+    overflow: hidden; /* Empêche le débordement du contenu */
+}
+
+.login-progress::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #0cfb06; /* Couleur de la barre de progression */
+    animation: loginwait 1s infinite; /* Animation de la progression */
+    -webkit-animation: loginwait 1s infinite;
+    -moz-animation: loginwait 1s infinite;
+}
+
+@keyframes loginwait {
+    0% { width: 0%; }
+    10% { width: 10%; }
+    30% { width: 30%; }
+    50% { width: 50%; }
+    100% { width: 100%; }
+}
+
+.success-area {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    color: green;
+}
+
+.all-msg {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
 }

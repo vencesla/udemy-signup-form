@@ -1,0 +1,74 @@
+.left-area{
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.left-area::before{
+    position: absolute;
+    content: "Profile";
+    top: 0;
+    left: -35px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: rotate(-30deg);
+    background-color: #f93d67;
+    color: #fff;
+}
+.right-area {
+    background-color: #fff;
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.right-area::before{
+    position: absolute;
+    content: "Details";
+    top: 0;
+    right: -35px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: rotate(30deg);
+    background-color: #7047d7;
+    color: #fff;
+}
+.contents {
+    margin-top: 50px;
+}
+.usr_img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+.list-group .first-li {
+    margin-top: 10px;
+}
+.list-group-item:hover{
+    background-color: #7047d7;
+}
+.list-group-item:hover a{
+    color: #fff;
+}
+.btn-logout{
+    background-color: rgba(0,0,0,.0);
+    border: 1px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.btn-logout:hover{
+    background-color: rgba(0,0,0,.0);
+    border: 1px solid #fff;
+}
+
+.success-msg {
+    background-color: #7047d7;
+    border: 0px;
+}
